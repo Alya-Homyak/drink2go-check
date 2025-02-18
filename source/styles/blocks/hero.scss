@@ -21,7 +21,7 @@
   margin-bottom: 6px;
 }
 
-.slide__new {
+.hero__slide-new {
   text-transform: uppercase;
   color: $base-primary;
   font-size: 12px;
@@ -31,7 +31,7 @@
   letter-spacing: 0.04em;
 }
 
-.slide__title {
+.hero__slide-title {
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
@@ -39,25 +39,25 @@
   letter-spacing: 0.06em;
 }
 
-.slide__description {
+.hero__slide-description {
   font-size: 14px;
   line-height: 20px;
   margin: 0 0 20px;
 }
 
-.slide__buy {
+.hero__slide-buy {
   display: flex;
   justify-content: space-between;
   padding: 0 26px;
   align-items: center;
 }
 
-.slide__price {
+.hero__slide-price {
   display: flex;
   column-gap: 6px;
 }
 
-.slide__old-price {
+.hero__slide-old-price {
   font-size: 16px;
   line-height: 32px;
   color: $base-primary;
@@ -65,13 +65,13 @@
   margin-top: 2px;
 }
 
-.slide__current-price {
+.hero__slide-current-price {
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
 }
 
-.slide__buy-button {
+.hero__slide-buy-button {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -83,21 +83,21 @@
   border: none;
 }
 
-.hero__slide--flat-white {
+.hero__slide-flat-white {
   background-color: $bg-flat-white;
   display: flex;
   flex-direction: column;
   padding: 20px 20px 60px;
 }
 
-.hero__slide--lavender-latte {
+.hero__slide-lavender-latte {
   background-color: $bg-lavender-latte;
   display: flex;
   flex-direction: column;
   padding: 20px 20px 60px;
 }
 
-.hero__slide--espresso {
+.hero__slide-espresso {
   background-color: $bg-espresso;
   display: flex;
   flex-direction: column;

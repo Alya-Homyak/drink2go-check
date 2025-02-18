@@ -19,7 +19,7 @@
   display: flex;
 }
 
-.header__icon--profile::before {
+.header__profile::before {
   display: block;
   content: "";
   background-image: url("../../icons/user-grey.svg");
@@ -31,7 +31,7 @@
   background-position: center;
 }
 
-.header__icon--basket::before {
+.header__basket::before {
   display: block;
   content: "";
   background-image: url("../../icons/union-grey.svg");
@@ -43,7 +43,7 @@
   background-position: center;
 }
 
-.header__icon--navigation::before {
+.header__navigation::before {
   display: block;
   content: "";
   background-image: url("../../icons/icon-burger.svg");
