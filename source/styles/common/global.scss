@@ -11,6 +11,7 @@ main {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 .visually-hidden {
@@ -30,4 +31,9 @@ img {
   object-fit: contain;
   max-width: 100%;
   height: auto;
+}
+
+picture {
+  display: block;
+  height: 0;
 }

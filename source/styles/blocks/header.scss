@@ -1,7 +1,81 @@
 .header {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $base-white;
+  color: $base-black;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin: 12px 20px;
+}
+
+.header__icons {
+  display: flex;
+}
+
+.header__icon--profile::before {
+  display: block;
+  content: "";
+  background-image: url("../../icons/user-grey.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  padding: 22px;
+  background-position: center;
+}
+
+.header__icon--basket::before {
+  display: block;
+  content: "";
+  background-image: url("../../icons/union-grey.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  padding: 22px;
+  background-position: center;
+}
+
+.header__icon--navigation::before {
+  display: block;
+  content: "";
+  background-image: url("../../icons/icon-burger.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  padding: 22px;
+  background-position: center;
+}
+
+.header__nav-list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__nav-item {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid $base-secondary;
+}
+
+.header__nav-item:last-child {
+  border-bottom: 1px solid $base-secondary;
+}
+
+.header__nav-link {
+  text-transform: uppercase;
+  color: $base-black;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
 }

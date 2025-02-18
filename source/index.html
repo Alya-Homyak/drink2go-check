@@ -6,7 +6,7 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
-  <link rel="stylesheet" href="./styles/styles.scss">
+  <link rel="stylesheet" href="./styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -20,11 +20,14 @@
           <img class="header__logo-picture" width="32" height="36" src="images/logo-icon.svg" alt="Логотип страницы">
         </picture>
       </a>
-      <a class="header__icon" href="#">Войти</a>
-      <a class="header__icon" href="#">Корзина</a>
+      <div class="header__icons">
+        <a class="header__icon--profile" href="#"><span class="visually-hidden">Войти</span></a>
+        <a class="header__icon--basket" href="#"><span class="visually-hidden">Корзина</span></a>
+        <a class="header__icon--navigation" href="#"><span class="visually-hidden">Навигация</span></a>
+      </div>
     </div>
 
-    <nav class="header__nav-section">
+    <nav class="header__nav-section visually-hidden">
       <ul class="header__nav-list">
         <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
         <li class="header__nav-item"><a class="header__nav-link" href="#">Каталог</a></li>
