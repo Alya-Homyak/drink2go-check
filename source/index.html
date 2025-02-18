@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="header__container">
       <a class="header__logo" href="#">
         <picture>
@@ -38,7 +38,80 @@
   </header>
 
   <main>
-    <h1>Начальная страница</h1>
+
+    <section class="hero" data-test="hero">
+      <h2 class="visually-hidden">Слайдер с продуктами</h2>
+      <div class="hero__container">
+        <ul class="hero__slides">
+          <li class="hero__slide">
+            <div class="hero__slide--flat-white">
+              <picture class="hero__image">
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/flat_white_img@1x.png 1x, ./images/flat_white_img@2x.png 2x" width="600" height="600">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/flat_white_img@1x.png 1x, ./images/flat_white_img@2x.png 2x" width="476" height="476">
+                <img class="header__logo-picture" width="280" height="280" src="./images/flat_white_img@1x.png" srcset="./images/flat_white_img@2x.png 2x" alt="Изображение кофе">
+              </picture>
+              <p class="slide__new">Новинка!</p>
+              <h3 class="slide__title">Декаф Флэт Уайт</h3>
+              <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <div class="slide__buy">
+                <div class="slide__price">
+                  <span class="slide__old-price">295₽</span>
+                  <span class="slide__current-price">225₽</span>
+                </div>
+
+                <button class="slide__buy-button" type="button">Заказать</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="hero__slide">
+            <div class="hero__slide--lavender-latte visually-hidden">
+              <picture class="hero__image">
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/lavender_img@1x.png 1x, ./images/lavender_img@2x.png 2x" width="600" height="600">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/lavender_img@1x.png 1x, ./images/lavender_img@2x.png 2x" width="476" height="476">
+                <img class="header__logo-picture" width="280" height="280" src="./images/lavender_img@1x.png" srcset="./images/lavender_img@2x.png 2x" alt="Изображение кофе">
+              </picture>
+              <p class="slide__new">Новинка!</p>
+              <h3 class="slide__title">Лавандовый Латте</h3>
+              <p class="slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="slide__buy">
+                <div class="slide__price">
+                  <span class="slide__old-price">285₽</span>
+                  <span class="slide__current-price">265₽</span>
+                </div>
+                <button class="slide__buy-button" type="button">Заказать</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="hero__slide">
+            <div class="hero__slide--espresso visually-hidden">
+              <picture class="hero__image">
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/espresso_img@1x.png 1x, ./images/espresso_img@2x.png 2x" width="600" height="600">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/espresso_img@1x.png 1x, ./images/espresso_img@2x.png 2x" width="476" height="476">
+                <img class="header__logo-picture" width="280" height="280" src="./images/espresso_img@1x.png" srcset="./images/espresso_img@2x.png 2x" alt="Изображение кофе">
+              </picture>
+              <p class="slide__new">Новинка!</p>
+              <h3 class="slide__title">Тройной эспрессо</h3>
+              <p class="slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="slide__buy">
+                <div class="slide__price">
+                  <span class="slide__old-price">395₽</span>
+                  <span class="slide__current-price">375₽</span>
+                </div>
+                <button class="slide__buy-button" type="button">Заказать</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="hero__slider-button slider-button-prev" type="button">
+          <span class="visually-hidden">назад</span>
+        </button>
+        <button class="hero__slider-button slider-button-next" type="button">
+          <span class="visually-hidden">вперед</span>
+        </button>
+      </div>
+    </section>
   </main>
 </body>
 
