@@ -11,7 +11,28 @@
 </head>
 
 <body class="page__body">
-  <header class="header">Шапка</header>
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="#">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-long.svg" width="170" height="36">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-short.svg" width="82" height="36">
+          <img class="header__logo-picture" width="32" height="36" src="images/logo-icon.svg" alt="Логотип страницы">
+        </picture>
+      </a>
+      <a class="header__icon" href="#">Войти</a>
+      <a class="header__icon" href="#">Корзина</a>
+    </div>
+
+    <nav class="header__nav-section">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Каталог</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Доставка</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <h1>Начальная страница</h1>
