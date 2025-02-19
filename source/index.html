@@ -140,6 +140,72 @@
       </div>
     </section>
 
+    <section class="catalog" data-test="catalog">
+      <div class="catalog__container">
+        <p class="catalog__title">Каталог</p>
+        <h2 class="catalog__second-title">Каталог кофейных напитков</h2>
+        <form class="catalog__filters" action=" https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="catalog__filter-title">Цена</legend>
+            <div class="catalog__price-filter">
+              <div class="catalog__price-slider"></div>
+              <div class="catalog__price-field">
+                <label class="visually-hidden" for="min-price">Цена</label>
+                <input class="catalog__price-value" type="number" name="min-price" id="min-price" placeholder="0">
+                <hr />
+                <label class="visually-hidden" for="max-price">Цена</label>
+                <input class="catalog__price-value" type="number" name="max-price" id="max-price" placeholder="900">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="catalog__filter-title">Наличие молока</legend>
+            <div>
+              <input class="catalog__milk-value" type="radio" name="milk" id="milk">
+              <label for="milk">Неважно</label>
+            </div>
+            <div>
+              <input class="catalog__milk-value" type="radio" name="milk" id="normal-milk">
+              <label for="normal-milk">Только животное</label>
+            </div>
+            <div>
+              <input class="catalog__milk-value" type="radio" name="milk" id="plant-milk">
+              <label for="plant-milk">Только растительное</label>
+            </div>
+            <div>
+              <input class="catalog__milk-value" type="radio" name="milk" id="no-milk">
+              <label for="no-milk">Без молока</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="catalog__filter-title">Страна произрастания</legend>
+            <div>
+              <input class="catalog__country-value" type="radio" name="country" id="brazil">
+              <label for="brazil">Бразилия</label>
+            </div>
+            <div>
+              <input class="catalog__country-value" type="radio" name="country" id="ethiopia">
+              <label for="ethiopia">Эфиопия</label>
+            </div>
+            <div>
+              <input class="catalog__country-value" type="radio" name="country" id="colombia">
+              <label for="colombia">Колумбия</label>
+            </div>
+            <div>
+              <input class="catalog__country-value" type="radio" name="country" id="costa-rica">
+              <label for="costa-rica">Коста-Рика</label>
+            </div>
+            <div>
+              <input class="catalog__country-value" type="radio" name="country" id="peru">
+              <label for="peru">Перу</label>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+    </section>
   </main>
 </body>
 

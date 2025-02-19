@@ -1,0 +1,76 @@
+.catalog {
+  background-color: $bg-lightest-grey;
+  text-align: center;
+}
+
+.catalog__container {
+  padding: 50px 20px 44px;
+}
+
+.catalog__title {
+  text-transform: uppercase;
+  color: #7859cf;
+  letter-spacing: 0.04em;
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.catalog__second-title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.catalog__filters {
+  text-align: left;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__filter-title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.catalog__price-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  display: block;
+  height: 2px;
+  width: 8px;
+  border: none;
+  border-top: 2px solid $base-grey;
+}
+
+.catalog__price-value {
+  background-color: $base-white;
+  border: 2px solid #9070ec;
+  border-radius: 4px;
+  width: 118px;
+  height: 40px;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+.catalog__price-value[placeholder] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
