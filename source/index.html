@@ -1,17 +1,221 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header" data-test="header">
+    <div class="header__container">
+      <a class="header__logo" href="#">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-long.svg" width="170" height="36">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-short.svg" width="82" height="36">
+          <img class="header__logo-picture" width="32" height="36" src="images/logo-icon.svg" alt="Логотип страницы">
+        </picture>
+      </a>
+      <div class="header__icons">
+        <a class="header__profile" href="#"><span class="visually-hidden">Войти</span></a>
+        <a class="header__basket" href="#"><span class="visually-hidden">Корзина</span></a>
+        <a class="header__navigation" href="#"><span class="visually-hidden">Навигация</span></a>
+      </div>
+    </div>
+
+    <nav class="header__nav-section visually-hidden">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Каталог</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Доставка</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">О нас</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" data-test="hero">
+      <h1 class="visually-hidden">Слайдер с продуктами</h1>
+      <div class="hero__container">
+        <ul class="hero__slides">
+          <li class="hero__slide">
+            <div class="hero__slide-flat-white">
+              <picture class="hero__image">
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/flat_white_img@1x.png 1x, ./images/flat_white_img@2x.png 2x" width="600" height="600">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/flat_white_img@1x.png 1x, ./images/flat_white_img@2x.png 2x" width="476" height="476">
+                <img width="280" height="280" src="./images/flat_white_img@1x.png" srcset="./images/flat_white_img@2x.png 2x" alt="Изображение кофе">
+              </picture>
+              <p class="hero__slide-new">Новинка!</p>
+              <h2 class="hero__slide-title">Декаф Флэт Уайт</h2>
+              <p class="hero__slide-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <div class="hero__slide-buy">
+                <div class="hero__slide-price">
+                  <span class="hero__slide-old-price">295₽</span>
+                  <span class="hero__slide-current-price">225₽</span>
+                </div>
+
+                <button class="hero__slide-buy-button" type="button">Заказать</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="hero__slide">
+            <div class="hero__slide-lavender-latte visually-hidden">
+              <picture class="hero__image">
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/lavender_img@1x.png 1x, ./images/lavender_img@2x.png 2x" width="600" height="600">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/lavender_img@1x.png 1x, ./images/lavender_img@2x.png 2x" width="476" height="476">
+                <img width="280" height="280" src="./images/lavender_img@1x.png" srcset="./images/lavender_img@2x.png 2x" alt="Изображение кофе">
+              </picture>
+              <p class="hero__slide-new">Новинка!</p>
+              <h2 class="hero__slide-title">Лавандовый Латте</h2>
+              <p class="hero__slide-description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="hero__slide-buy">
+                <div class="hero__slide-price">
+                  <span class="hero__slide-old-price">285₽</span>
+                  <span class="hero__slide-current-price">265₽</span>
+                </div>
+                <button class="hero__slide-buy-button" type="button">Заказать</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="hero__slide">
+            <div class="hero__slide-espresso visually-hidden">
+              <picture class="hero__image">
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/espresso_img@1x.png 1x, ./images/espresso_img@2x.png 2x" width="600" height="600">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/espresso_img@1x.png 1x, ./images/espresso_img@2x.png 2x" width="476" height="476">
+                <img width="280" height="280" src="./images/espresso_img@1x.png" srcset="./images/espresso_img@2x.png 2x" alt="Изображение кофе">
+              </picture>
+              <p class="hero__slide-new">Новинка!</p>
+              <h2 class="hero__slide-title">Тройной эспрессо</h2>
+              <p class="hero__slide-description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="hero__slide-buy">
+                <div class="hero__slide-price">
+                  <span class="hero__slide-old-price">395₽</span>
+                  <span class="hero__slide-current-price">375₽</span>
+                </div>
+                <button class="hero__slide-buy-button" type="button">Заказать</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="hero__slider-button slider-button-prev" type="button">
+          <span class="visually-hidden">назад</span>
+        </button>
+        <button class="hero__slider-button slider-button-next" type="button">
+          <span class="visually-hidden">вперед</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="features" data-test="features">
+      <div class="features__container">
+        <span class="features__title">Преимущества</span>
+        <h2 class="features__second-title">Главные причины выбрать Drink2Go</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__item-title features__item-title--speed">Скорость</h3>
+            <p class="features__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title features__item-title--fit">Удобство</h3>
+            <p class="features__item-description">Легко помещается и в карман,
+              и в маленькую сумочку</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title features__item-title--energy">Бодрость</h3>
+            <p class="features__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title features__item-title--eco">Экологичность</h3>
+            <p class="features__item-description">Вся упаковка сделана
+              из перерабатываемых материалов</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="catalog" data-test="catalog">
+      <div class="catalog__container">
+        <p class="catalog__title">Каталог</p>
+        <h2 class="catalog__second-title">Каталог кофейных напитков</h2>
+        <form class="catalog__filters" action=" https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="catalog__filter-title">Цена</legend>
+            <div class="catalog__price-slider"></div>
+            <div class="catalog__price-field">
+              <label class="visually-hidden" for="min-price">Цена</label>
+              <input class="catalog__price-value" type="number" name="min-price" id="min-price" placeholder="0">
+              <label class="visually-hidden" for="max-price">Цена</label>
+              <input class="catalog__price-value" type="number" name="max-price" id="max-price" placeholder="900">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="catalog__filter-title">Наличие молока</legend>
+
+            <div class="catalog__filter-milk-container">
+              <input class="catalog__milk-value" type="radio" name="milk" id="no-matter" value="no-matter" checked>
+              <span class="catalog__radio-checkmark"></span>
+              <label for="no-matter">Неважно</label>
+            </div>
+            <div class="catalog__filter-milk-container">
+              <input class="catalog__milk-value" type="radio" name="milk" id="plant-milk" value="plant-milk">
+              <span class="catalog__radio-checkmark"></span>
+              <label for="plant-milk">Только растительное</label>
+            </div>
+            <div class="catalog__filter-milk-container">
+              <input class="catalog__milk-value" type="radio" name="milk" id="normal-milk" value="normal-milk">
+              <span class="catalog__radio-checkmark"></span>
+              <label for="normal-milk">Только животное</label>
+            </div>
+            <div class="catalog__filter-milk-container">
+              <input class="catalog__milk-value" type="radio" name="milk" id="no-milk" value="no-milk" disabled>
+              <span class="catalog__radio-checkmark"></span>
+              <label for="no-milk">Без молока</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="catalog__filter-title">Страна произрастания</legend>
+            <div class="catalog__filter-country-container">
+              <input class="catalog__country-value" type="checkbox" name="country" id="brazil" value="brazil" checked>
+              <span class="catalog__checkbox-checkmark"></span>
+              <label for="brazil">Бразилия</label>
+            </div>
+            <div class="catalog__filter-country-container">
+              <input class="catalog__country-value" type="checkbox" name="country" id="ethiopia" value="ethiopia">
+              <span class="catalog__checkbox-checkmark"></span>
+              <label for="ethiopia">Эфиопия</label>
+            </div>
+            <div class="catalog__filter-country-container">
+              <input class="catalog__country-value" type="checkbox" name="country" id="colombia" value="colombia">
+              <span class="catalog__checkbox-checkmark"></span>
+              <label for="colombia">Колумбия</label>
+            </div>
+            <div class="catalog__filter-country-container">
+              <input class="catalog__country-value" type="checkbox" name="country" id="costa-rica" value="costa-rica">
+              <span class="catalog__checkbox-checkmark"></span>
+              <label for="costa-rica">Коста-Рика</label>
+            </div>
+            <div class="catalog__filter-country-container">
+              <input class="catalog__country-value" type="checkbox" name="country" id="peru" value="peru" disabled>
+              <span class="catalog__checkbox-checkmark"></span>
+              <label for="peru">Перу</label>
+            </div>
+          </fieldset>
+          <button class="catalog__filters-submit" type="submit">Применить</button>
+          <button class="catalog__filters-reset" type="reset">Сбросить</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

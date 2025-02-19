@@ -1,0 +1,71 @@
+.features__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 28px;
+}
+
+.features__title {
+  text-transform: uppercase;
+  color: $base-primary;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  letter-spacing: 0.04em;
+}
+
+.features__second-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  margin: 0 0 36px;
+  text-align: center;
+}
+
+.features__item {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.features__item-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.features__item-title::before {
+  display: block;
+  content: "";
+  background-size: 52px 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 52px;
+  height: 56px;
+  margin: 0 auto 10px;
+}
+
+
+.features__item-title--speed::before {
+  background-image: url("../../icons/feature-speed.svg");
+}
+
+.features__item-title--fit::before {
+  background-image: url("../../icons/feature-fit.svg");
+}
+
+.features__item-title--energy::before {
+  background-image: url("../../icons/feature-energy.svg");
+}
+
+.features__item-title--eco::before {
+  background-image: url("../../icons/feature-eco.svg");
+}
+
+
+.features__item-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}

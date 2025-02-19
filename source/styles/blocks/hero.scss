@@ -1,0 +1,131 @@
+.hero__container {
+  position: relative;
+}
+
+.hero__slides {
+  padding: 20px;
+  color: $base-black;
+  font-weight: 400;
+}
+
+.hero__slide {
+  margin: -20px;
+  text-align: center;
+}
+
+.hero__image {
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.hero__slide-new {
+  text-transform: uppercase;
+  color: $base-primary;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  letter-spacing: 0.04em;
+}
+
+.hero__slide-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  letter-spacing: 0.02em;
+}
+
+.hero__slide-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 20px;
+}
+
+.hero__slide-buy {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 26px;
+  align-items: center;
+}
+
+.hero__slide-price {
+  display: flex;
+  column-gap: 6px;
+}
+
+.hero__slide-old-price {
+  font-size: 16px;
+  line-height: 32px;
+  color: $base-primary;
+  text-decoration: line-through;
+  margin-top: 2px;
+}
+
+.hero__slide-current-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.hero__slide-buy-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-white;
+  background-color: $base-primary;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.hero__slide-flat-white {
+  background-color: $bg-flat-white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 60px;
+}
+
+.hero__slide-lavender-latte {
+  background-color: $bg-lavender-latte;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 60px;
+}
+
+.hero__slide-espresso {
+  background-color: $bg-espresso;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 60px;
+}
+
+.hero__slider-button {
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  padding: 0;
+}
+
+.slider-button-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../icons/icon-slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.slider-button-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../../icons/icon-slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
