@@ -26,6 +26,8 @@
 
 .catalog__filters {
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 fieldset {
@@ -33,11 +35,11 @@ fieldset {
   flex-direction: column;
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 10px;
 }
 
 .catalog__filter-title {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   font-size: 16px;
   font-weight: 600;
@@ -48,14 +50,21 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-hr {
-  display: block;
-  height: 2px;
-  width: 8px;
+.catalog__price-field::after {
+  content: "";
+  background-color: #bdbdbd;
   border: none;
-  border-top: 2px solid $base-grey;
+  width: 8px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
 }
 
 .catalog__price-value {
@@ -66,6 +75,7 @@ hr {
   height: 40px;
   padding: 8px 10px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .catalog__price-value[placeholder] {
@@ -73,4 +83,177 @@ hr {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+}
+
+.catalog__price-slider {
+  height: 48px;
+}
+
+.catalog__filter-milk-container {
+  position: relative;
+  margin: 0 0 20px;
+}
+
+.catalog__filter-milk-container label {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.catalog__milk-value {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.catalog__radio-checkmark {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border: 2px solid $base-primary;
+  border-radius: 50%;
+}
+
+.catalog__milk-value:checked ~ .catalog__radio-checkmark::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: $base-primary;
+  top: 2px;
+  left: 2px;
+  border: none;
+  border-radius: 50%;
+}
+
+.catalog__milk-value:disabled ~ .catalog__radio-checkmark {
+  border: 2px solid #e2e2e2;
+}
+
+.catalog__milk-value:disabled ~ label {
+  color: $base-grey;
+}
+
+.catalog__filter-country-container {
+  position: relative;
+  margin: 0 0 20px;
+}
+
+.catalog__filter-country-container label {
+  margin-left: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.catalog__country-value {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.catalog__checkbox-checkmark {
+  width: 42px;
+  height: 24px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border: 2px solid $base-primary;
+  background-color: $base-primary;
+  border-radius: 12px;
+}
+
+.catalog__country-value:checked ~ .catalog__checkbox-checkmark {
+  width: 42px;
+  height: 24px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border: 2px solid $base-primary;
+  background-color: $base-primary;
+  border-radius: 12px;
+}
+
+.catalog__country-value ~ .catalog__checkbox-checkmark {
+  width: 42px;
+  height: 24px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border: 2px solid $base-grey;
+  background-color: $base-grey;
+  border-radius: 12px;
+}
+
+.catalog__country-value ~ .catalog__checkbox-checkmark::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: $bg-lightest-grey;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 50%;
+}
+
+.catalog__country-value:checked ~ .catalog__checkbox-checkmark::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: $bg-lightest-grey;
+  top: 0;
+  left: 18px;
+  border: none;
+  border-radius: 50%;
+}
+
+.catalog__country-value:disabled ~ .catalog__checkbox-checkmark {
+  border: 2px solid #e2e2e2;
+  background-color: #e2e2e2;
+}
+
+.catalog__country-value:disabled ~ label {
+  color: $base-grey;
+}
+
+.catalog__filters-submit {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  background-color: $base-primary;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-white;
+  margin-bottom: 20px;
+}
+
+.catalog__filters-reset {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  background-color: $base-white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-primary;
 }
