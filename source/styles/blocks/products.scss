@@ -1,0 +1,71 @@
+.product {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-black;
+  background-color: $base-white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product__image {
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.product__info {
+  text-align: left;
+}
+
+.product__title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.product__description {
+  margin: 0 0 16px;
+}
+
+.product__to-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__price {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.product__button {
+  height: 36px;
+  background-color: $base-primary;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+}
+
+.product__button span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-white;
+  margin-left: 6px;
+}
+
+.product__button::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/union-to-buy.svg");
+  width: 20px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
