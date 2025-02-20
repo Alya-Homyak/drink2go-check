@@ -1,7 +1,7 @@
 .catalog {
   background-color: $bg-lightest-grey;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 42px;
 }
 
 .catalog__container {
@@ -14,7 +14,7 @@
   text-transform: uppercase;
   color: #7859cf;
   letter-spacing: 0.04em;
-  margin: 0 0 4px;
+  margin: 0 0 5px;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
@@ -31,7 +31,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 
@@ -70,4 +70,8 @@ fieldset {
   font-size: 16px;
   line-height: 24px;
   color: $base-primary;
+}
+
+.catalog__products-container {
+  margin-bottom: 42px;
 }

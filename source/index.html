@@ -209,7 +209,6 @@
           <button class="catalog__filters-submit" type="submit">Применить</button>
           <button class="catalog__filters-reset" type="reset">Сбросить</button>
         </form>
-
         <div class="catalog__sort sort">
           <label class="sort__title" for="sort">Сортировка:</label>
           <select class="sort__option-list" name="sort" id="sort">
@@ -310,7 +309,38 @@
             </li>
           </ul>
         </div>
+        <div class="catalog__pagination pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--previous" href="#">
+                <p class="visually-hidden">назад</p>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--next" href="#">
+                <p class="visually-hidden">вперед</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Локализация</h2>
+      <picture class="map__image">
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x" width="600" height="600">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x" width="476" height="476">
+        <img width="320" height="420" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" alt="Карта">
+      </picture>
     </section>
   </main>
 </body>
