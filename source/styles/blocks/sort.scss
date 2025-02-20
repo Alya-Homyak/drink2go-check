@@ -1,0 +1,32 @@
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.sort__option {
+  font-family: "Montserrat", sans-serif;
+  background-color: $bg-lightest-grey;
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.sort__option-list {
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: none;
+  padding: 4px 10px;
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
