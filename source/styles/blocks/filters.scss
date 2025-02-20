@@ -1,44 +1,4 @@
-.catalog {
-  background-color: $bg-lightest-grey;
-  text-align: center;
-}
-
-.catalog__container {
-  padding: 50px 20px 44px;
-}
-
-.catalog__title {
-  text-transform: uppercase;
-  color: #7859cf;
-  letter-spacing: 0.04em;
-  margin: 0 0 4px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-}
-
-.catalog__second-title {
-  margin: 0 0 20px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.catalog__filters {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  padding: 0;
-  margin: 0 0 10px;
-}
-
-.catalog__filter-title {
+.filter--title {
   margin: 0 0 20px;
   padding: 0;
   font-size: 16px;
@@ -46,7 +6,11 @@ fieldset {
   line-height: 24px;
 }
 
-.catalog__price-field {
+.filter__price-slider {
+  height: 48px;
+}
+
+.filter__price-field {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +18,7 @@ fieldset {
   margin-bottom: 20px;
 }
 
-.catalog__price-field::after {
+.filter__price-field::after {
   content: "";
   background-color: #bdbdbd;
   border: none;
@@ -67,7 +31,7 @@ fieldset {
   top: 50%;
 }
 
-.catalog__price-value {
+.filter__price-value {
   background-color: $base-white;
   border: 2px solid #9070ec;
   border-radius: 4px;
@@ -78,35 +42,33 @@ fieldset {
   text-align: center;
 }
 
-.catalog__price-value[placeholder] {
+.filter__price-value[placeholder] {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
 
-.catalog__price-slider {
-  height: 48px;
-}
-
-.catalog__filter-milk-container {
+.filter__radio-container {
   position: relative;
   margin: 0 0 20px;
 }
 
-.catalog__filter-milk-container label {
-  margin-left: 8px;
+.filter__radio-container label {
+  padding-left: 34px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  position: relative;
 }
 
-.catalog__milk-value {
+.filter__radio-value {
   opacity: 0;
   cursor: pointer;
+  position: absolute;
 }
 
-.catalog__radio-checkmark {
+.filter__radio-checkmark {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -117,7 +79,7 @@ fieldset {
   border-radius: 50%;
 }
 
-.catalog__milk-value:checked ~ .catalog__radio-checkmark::after {
+.filter__radio-value:checked ~ .filter__radio-checkmark::after {
   content: "";
   display: block;
   width: 16px;
@@ -131,32 +93,34 @@ fieldset {
   border-radius: 50%;
 }
 
-.catalog__milk-value:disabled ~ .catalog__radio-checkmark {
+.filter__radio-value:disabled ~ .filter__radio-checkmark {
   border: 2px solid #e2e2e2;
 }
 
-.catalog__milk-value:disabled ~ label {
+.filter__radio-value:disabled ~ label {
   color: $base-grey;
 }
 
-.catalog__filter-country-container {
+.filter__checkbox-container {
   position: relative;
   margin: 0 0 20px;
 }
 
-.catalog__filter-country-container label {
-  margin-left: 28px;
+.filter__checkbox-container label {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  position: relative;
+  padding-left: 52px;
 }
 
-.catalog__country-value {
+.filter__checkbox-value {
   opacity: 0;
   cursor: pointer;
+  position: absolute;
 }
 
-.catalog__checkbox-checkmark {
+.filter__checkbox-checkmark {
   width: 42px;
   height: 24px;
   position: absolute;
@@ -168,7 +132,7 @@ fieldset {
   border-radius: 12px;
 }
 
-.catalog__country-value:checked ~ .catalog__checkbox-checkmark {
+.filter__checkbox-value:checked ~ .filter__checkbox-checkmark {
   width: 42px;
   height: 24px;
   position: absolute;
@@ -180,7 +144,7 @@ fieldset {
   border-radius: 12px;
 }
 
-.catalog__country-value ~ .catalog__checkbox-checkmark {
+.filter__checkbox-value ~ .filter__checkbox-checkmark {
   width: 42px;
   height: 24px;
   position: absolute;
@@ -192,7 +156,7 @@ fieldset {
   border-radius: 12px;
 }
 
-.catalog__country-value ~ .catalog__checkbox-checkmark::after {
+.filter__checkbox-value ~ .filter__checkbox-checkmark::after {
   content: "";
   display: block;
   width: 20px;
@@ -206,7 +170,7 @@ fieldset {
   border-radius: 50%;
 }
 
-.catalog__country-value:checked ~ .catalog__checkbox-checkmark::after {
+.filter__checkbox-value:checked ~ .filter__checkbox-checkmark::after {
   content: "";
   display: block;
   width: 20px;
@@ -220,40 +184,11 @@ fieldset {
   border-radius: 50%;
 }
 
-.catalog__country-value:disabled ~ .catalog__checkbox-checkmark {
+.filter__checkbox-value:disabled ~ .filter__checkbox-checkmark {
   border: 2px solid #e2e2e2;
   background-color: #e2e2e2;
 }
 
-.catalog__country-value:disabled ~ label {
+.filter__checkbox-value:disabled ~ label {
   color: $base-grey;
-}
-
-.catalog__filters-submit {
-  width: 280px;
-  height: 40px;
-  border: none;
-  border-radius: 4px;
-  padding: 8px;
-  text-align: center;
-  background-color: $base-primary;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: $base-white;
-  margin-bottom: 20px;
-}
-
-.catalog__filters-reset {
-  width: 280px;
-  height: 40px;
-  border: none;
-  border-radius: 4px;
-  padding: 8px;
-  text-align: center;
-  background-color: $base-white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: $base-primary;
 }

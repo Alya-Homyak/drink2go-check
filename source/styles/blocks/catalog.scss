@@ -1,0 +1,72 @@
+.catalog {
+  background-color: $bg-lightest-grey;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.catalog__container {
+  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  text-transform: uppercase;
+  color: #7859cf;
+  letter-spacing: 0.04em;
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.catalog__second-title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.catalog__filters {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.catalog__filters-submit {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  background-color: $base-primary;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-white;
+  margin-bottom: 20px;
+}
+
+.catalog__filters-reset {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  background-color: $base-white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-primary;
+}

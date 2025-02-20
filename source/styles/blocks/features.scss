@@ -1,8 +1,14 @@
+.features {
+  padding: 50px 0 28px;
+}
+
 .features__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px 28px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .features__title {

@@ -1,0 +1,121 @@
+.slide__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+.slide__image {
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.slide__new {
+  text-transform: uppercase;
+  color: $base-primary;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0 auto 4px;
+  letter-spacing: 0.04em;
+}
+
+.slide__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  margin: 0 auto 10px;
+  letter-spacing: 0.02em;
+}
+
+.slide__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 auto 20px;
+}
+
+.slide__buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 230px;
+}
+
+.slide__price {
+  display: flex;
+  column-gap: 6px;
+}
+
+.slide__old-price {
+  font-size: 16px;
+  line-height: 32px;
+  color: $base-primary;
+  text-decoration: line-through;
+  margin-top: 2px;
+}
+
+.slide__current-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.slide__buy-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-white;
+  background-color: $base-primary;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.slide--flat-white {
+  background-color: $bg-flat-white;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-bo;
+}
+
+.slide--lavender-latte {
+  background-color: $bg-lavender-latte;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide--espresso {
+  background-color: $bg-espresso;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__slider-button {
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  padding: 0;
+}
+
+.slider-button-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../icons/icon-slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+.slider-button-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../../icons/icon-slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
