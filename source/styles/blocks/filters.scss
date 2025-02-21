@@ -15,7 +15,6 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 20px;
 }
 
 .filter__price-field::after {
@@ -42,8 +41,18 @@
   text-align: center;
 }
 
-// неправильный селектор
-.filter__price-value[placeholder] {
+.filter__price-value:focus,
+.filter__price-value:focus-visible {
+  border-color: #593cac;
+  outline-color: #593cac;
+}
+
+.filter__price-value:disabled {
+  border-color: #e2e2e2;
+  background-color: #e2e2e2;
+}
+
+.filter__price-value::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -53,6 +62,10 @@
 .filter__radio-container {
   position: relative;
   margin: 0 0 20px;
+}
+
+.filter__radio-container:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .filter__radio-container label {
@@ -77,8 +90,15 @@
   box-sizing: border-box;
   top: 0;
   left: 0;
-  border: 2px solid $base-primary;
+  border: 2px solid $base-grey;
   border-radius: 50%;
+}
+
+.filter__radio-checkmark:hover,
+.filter__radio-checkmark:focus,
+.filter__radio-checkmark:focus-visible {
+  border-color: $base-primary;
+  outline-color: $base-primary;
 }
 
 .filter__radio-value:checked ~ .filter__radio-checkmark::after {
@@ -95,6 +115,30 @@
   border-radius: 50%;
 }
 
+.filter__radio-value:checked ~ .filter__radio-checkmark {
+  border-color: $base-primary;
+}
+
+.filter__radio-value:checked:disabled ~ .filter__radio-checkmark::after {
+  background-color: #e2e2e2;
+}
+
+.filter__radio-checkmark:hover::after,
+.filter__radio-checkmark:focus::after,
+.filter__radio-checkmark:focus-visible::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 2px;
+  left: 2px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(120, 89, 207, 0.25);
+}
+
 .filter__radio-value:disabled ~ .filter__radio-checkmark {
   border: 2px solid #e2e2e2;
 }
@@ -105,7 +149,11 @@
 
 .filter__checkbox-container {
   position: relative;
-  margin: 0 0 20px; // todo убрать mb у последнего элемента
+  margin: 0 0 20px;
+}
+
+.filter__checkbox-container:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .filter__checkbox-container label {
@@ -120,18 +168,6 @@
   opacity: 0;
   cursor: pointer;
   position: absolute;
-}
-
-.filter__checkbox-checkmark {
-  width: 42px;
-  height: 24px;
-  position: absolute;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  border: 2px solid $base-primary;
-  background-color: $base-primary;
-  border-radius: 12px;
 }
 
 .filter__checkbox-value:checked ~ .filter__checkbox-checkmark {
@@ -156,6 +192,14 @@
   border: 2px solid $base-grey;
   background-color: $base-grey;
   border-radius: 12px;
+}
+
+.filter__checkbox-value ~ .filter__checkbox-checkmark:hover,
+.filter__checkbox-value ~ .filter__checkbox-checkmark:focus,
+.filter__checkbox-value ~ .filter__checkbox-checkmark:focus-visible {
+  border-color: $base-primary;
+  outline-color: $base-primary;
+  background-color: rgba(120, 89, 207, 0.25);
 }
 
 .filter__checkbox-value ~ .filter__checkbox-checkmark::after {
@@ -189,6 +233,11 @@
 .filter__checkbox-value:disabled ~ .filter__checkbox-checkmark {
   border: 2px solid #e2e2e2;
   background-color: #e2e2e2;
+}
+
+.filter__checkbox-value:checked:disabled ~ .filter__checkbox-checkmark::after {
+  border: 2px solid $base-grey;
+  background-color: $base-grey;
 }
 
 .filter__checkbox-value:disabled ~ label {

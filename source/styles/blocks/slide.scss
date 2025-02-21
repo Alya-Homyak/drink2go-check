@@ -73,6 +73,20 @@
   border: none;
 }
 
+.slide__buy-button:hover,
+.slide__buy-button:focus,
+.slide__buy-button:focus-visible {
+  background-color: #9070ec;
+}
+
+.slide__buy-button:active {
+  background-color: #593cac;
+}
+
+.slide__buy-button:disabled {
+  background-color: $base-grey;
+}
+
 .slide--flat-white {
   background-color: $bg-flat-white;
   display: flex;
@@ -110,6 +124,10 @@
   transform: rotate(180deg);
 }
 
+// .slider-button-prev:active::before {
+//   background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+// }
+
 .slider-button-next {
   position: absolute;
   top: 0;
@@ -119,3 +137,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+// .slider-button-next:active {
+//   background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+// }

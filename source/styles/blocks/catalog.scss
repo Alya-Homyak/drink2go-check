@@ -40,7 +40,7 @@ fieldset {
   flex-direction: column;
   border: none;
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0 0 30px;
 }
 
 .catalog__filters-submit {
@@ -58,6 +58,20 @@ fieldset {
   margin-bottom: 20px;
 }
 
+.catalog__filters-submit:hover,
+.catalog__filters-submit:focus,
+.catalog__filters-submit:focus-visible {
+  background-color: #9070ec;
+}
+
+.catalog__filters-submit:active {
+  background-color: #593cac;
+}
+
+.catalog__filters-submit:disabled {
+  background-color: $base-grey;
+}
+
 .catalog__filters-reset {
   width: 280px;
   height: 40px;
@@ -70,6 +84,20 @@ fieldset {
   font-size: 16px;
   line-height: 24px;
   color: $base-primary;
+}
+
+.catalog__filters-reset:hover,
+.catalog__filters-reset:focus,
+.catalog__filters-reset:focus-visible {
+  background-color: #9070ec;
+}
+
+.catalog__filters-reset:active {
+  background-color: #593cac;
+}
+
+.catalog__filters-reset:disabled {
+  background-color: #e2e2e2;
 }
 
 .catalog__products-container {

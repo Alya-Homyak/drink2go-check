@@ -61,6 +61,20 @@
   margin-left: 6px;
 }
 
+.product__button:hover,
+.product__button:focus,
+.product__button:focus-visible {
+  background-color: #9070ec;
+}
+
+.product__button:active {
+  background-color: #593cac;
+}
+
+.product__button:disabled {
+  background-color: $base-grey;
+}
+
 .product__button::before {
   content: "";
   display: block;
