@@ -42,6 +42,7 @@
   text-align: center;
 }
 
+// неправильный селектор
 .filter__price-value[placeholder] {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -55,6 +56,7 @@
 }
 
 .filter__radio-container label {
+  display: block;
   padding-left: 34px;
   font-size: 16px;
   font-weight: 400;
@@ -103,7 +105,7 @@
 
 .filter__checkbox-container {
   position: relative;
-  margin: 0 0 20px;
+  margin: 0 0 20px; // todo убрать mb у последнего элемента
 }
 
 .filter__checkbox-container label {

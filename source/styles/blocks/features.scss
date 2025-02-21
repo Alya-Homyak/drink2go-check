@@ -1,5 +1,5 @@
 .features {
-  padding: 50px 0 28px;
+  padding: 50px 0 60px;
 }
 
 .features__container {
@@ -34,6 +34,10 @@
   margin-bottom: 32px;
 }
 
+.features__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .features__item-title {
   font-size: 18px;
   line-height: 32px;
@@ -66,7 +70,7 @@
 }
 
 .features__item-title--eco::before {
-  background-image: url("../../icons/feature-eco.svg");
+  background-image: url("../../icons/feature-ecology.svg");
 }
 
 

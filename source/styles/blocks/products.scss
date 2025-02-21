@@ -10,6 +10,10 @@
   margin-bottom: 20px;
 }
 
+.product:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .product__image {
   height: auto;
   margin-bottom: 24px;
@@ -44,16 +48,12 @@
 }
 
 .product__button {
-  height: 36px;
   background-color: $base-primary;
   padding: 8px 20px;
   border: none;
   border-radius: 4px;
   display: flex;
-}
-
-.product__button span {
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -68,4 +68,5 @@
   width: 20px;
   height: 16px;
   background-repeat: no-repeat;
+  margin-right: 6px;
 }
