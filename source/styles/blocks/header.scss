@@ -3,6 +3,7 @@
   margin: 0;
   background-color: $base-white;
   color: $base-black;
+  position: relative;
 }
 
 .header__container {
@@ -89,22 +90,4 @@
 
 .header__navigation:active {
   background-color: $base-secondary;
-}
-
-.header__nav-item {
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid $base-secondary;
-}
-
-.header__nav-item:last-child {
-  border-bottom: 1px solid $base-secondary;
-}
-
-.header__nav-link {
-  text-transform: uppercase;
-  color: $base-black;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
 }

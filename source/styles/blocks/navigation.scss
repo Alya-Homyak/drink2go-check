@@ -1,0 +1,38 @@
+.navigation {
+  background-color: $base-white;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.navigation__item {
+  padding: 0;
+  text-align: center;
+  border-top: 1px solid $base-secondary;
+}
+
+.navigation__item:last-child {
+  border-bottom: 1px solid $base-secondary;
+}
+
+.navigation__link {
+  text-transform: uppercase;
+  padding: 20px;
+  color: $base-black;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:focus-visible {
+  color: #9070ec;
+  outline-color: transparent;
+}
+
+.navigation__link:active {
+  color: #593cac;
+}
