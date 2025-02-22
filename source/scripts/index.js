@@ -4,11 +4,11 @@ const navSection = document.querySelector('.navigation');
 
 function onClicked() {
   if (navButton.classList.contains('open-navigation')) {
-    navSection.classList.remove('visually-hidden');
+    navSection.classList.add('activ-nav');
     navButton.classList.add('close-navigation');
     navButton.classList.remove('open-navigation');
   } else {
-    navSection.classList.add('visually-hidden');
+    navSection.classList.remove('activ-nav');
     navButton.classList.remove('close-navigation');
     navButton.classList.add('open-navigation');
   }

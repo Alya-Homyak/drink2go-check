@@ -8,6 +8,10 @@
 
 .filter__price-slider {
   height: 48px;
+
+  @media (min-width: $tablet-width) {
+    height: 44px;
+  }
 }
 
 .filter__price-field {
@@ -39,6 +43,17 @@
   padding: 8px 10px;
   box-sizing: border-box;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+    margin-right: 48px;
+  }
+}
+
+.filter__price-value:nth-last-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .filter__price-value:focus,

@@ -10,3 +10,15 @@
 .hero__slide {
   text-align: center;
 }
+
+
+.hero__slider-button:active::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    height: 100%;
+    display: block;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}

@@ -20,21 +20,22 @@
           <img class="header__logo-picture" width="32" height="36" src="images/logo-icon.svg" alt="Логотип страницы">
         </picture>
       </a>
+
+      <nav class="header__nav-section  navigation">
+        <ul class="navigation__list no-list">
+          <li class="navigation__item current-page"><a class="navigation__link" href="#"><span>Главная</span></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#"><span>Каталог</span></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#"><span>Доставка</span></a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#"><span>О нас</span></a></li>
+        </ul>
+      </nav>
+
       <div class="header__icons">
         <a class="header__profile" href="#"><span class="visually-hidden">Войти</span></a>
         <a class="header__basket" href="#"><span class="visually-hidden">Корзина</span></a>
         <a class="header__navigation-button open-navigation" href="#"><span class="visually-hidden">Навигация</span></a>
       </div>
     </div>
-
-    <nav class="header__nav-section  navigation visually-hidden">
-      <ul class="navigation__list no-list">
-        <li class="navigation__item"><a class="navigation__link" href="#">Главная</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -51,16 +52,19 @@
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/flat_white_img@1x.png 1x, ./images/flat_white_img@2x.png 2x" width="476" height="476">
                 <img width="280" height="280" src="./images/flat_white_img@1x.png" srcset="./images/flat_white_img@2x.png 2x" alt="Изображение кофе">
               </picture>
-              <p class="slide__new">Новинка!</p>
-              <h3 class="slide__title">Декаф Флэт Уайт</h3>
-              <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-              <div class="slide__buy">
-                <div class="slide__price">
-                  <span class="slide__old-price">295₽</span>
-                  <span class="slide__current-price">225₽</span>
+              <div class="slide__information">
+                <p class="slide__new">Новинка!</p>
+                <h3 class="slide__title">Декаф Флэт Уайт</h3>
+                <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="slide__buy">
+                  <div class="slide__price">
+                    <span class="slide__old-price">295₽</span>
+                    <span class="slide__current-price">225₽</span>
+                  </div>
+                  <button class="slide__buy-button" type="button">Заказать</button>
                 </div>
-                <button class="slide__buy-button" type="button">Заказать</button>
               </div>
+
             </div>
 
           </li>
@@ -72,16 +76,19 @@
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/lavender_img@1x.png 1x, ./images/lavender_img@2x.png 2x" width="476" height="476">
                 <img width="280" height="280" src="./images/lavender_img@1x.png" srcset="./images/lavender_img@2x.png 2x" alt="Изображение кофе">
               </picture>
-              <p class="slide__new">Новинка!</p>
-              <h3 class="slide__title">Лавандовый Латте</h3>
-              <p class="slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-              <div class="slide__buy">
-                <div class="slide__price">
-                  <span class="slide__old-price">285₽</span>
-                  <span class="slide__current-price">265₽</span>
+              <div class="slide__information">
+                <p class="slide__new">Новинка!</p>
+                <h3 class="slide__title">Лавандовый Латте</h3>
+                <p class="slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="slide__buy">
+                  <div class="slide__price">
+                    <span class="slide__old-price">285₽</span>
+                    <span class="slide__current-price">265₽</span>
+                  </div>
+                  <button class="slide__buy-button" type="button">Заказать</button>
                 </div>
-                <button class="slide__buy-button" type="button">Заказать</button>
               </div>
+
             </div>
           </li>
 
@@ -92,16 +99,19 @@
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/espresso_img@1x.png 1x, ./images/espresso_img@2x.png 2x" width="476" height="476">
                 <img width="280" height="280" src="./images/espresso_img@1x.png" srcset="./images/espresso_img@2x.png 2x" alt="Изображение кофе">
               </picture>
-              <p class="slide__new">Новинка!</p>
-              <h2 class="slide__title">Тройной эспрессо</h2>
-              <p class="slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-              <div class="slide__buy">
-                <div class="slide__price">
-                  <span class="slide__old-price">395₽</span>
-                  <span class="slide__current-price">375₽</span>
+              <div class="slide__information">
+                <p class="slide__new">Новинка!</p>
+                <h2 class="slide__title">Тройной эспрессо</h2>
+                <p class="slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="slide__buy">
+                  <div class="slide__price">
+                    <span class="slide__old-price">395₽</span>
+                    <span class="slide__current-price">375₽</span>
+                  </div>
+                  <button class="slide__buy-button" type="button">Заказать</button>
                 </div>
-                <button class="slide__buy-button" type="button">Заказать</button>
               </div>
+
             </div>
           </li>
         </ul>
@@ -207,9 +217,13 @@
               <label for="peru">Перу</label>
             </div>
           </fieldset>
-          <button class="catalog__filters-submit" type="submit">Применить</button>
-          <button class="catalog__filters-reset" type="reset">Сбросить</button>
+          <div class="catalog__button">
+            <button class="catalog__filters-submit" type="submit">Применить</button>
+            <button class="catalog__filters-reset" type="reset">Сбросить</button>
+          </div>
+
         </form>
+
         <div class="catalog__sort sort">
           <label class="sort__title" for="sort">Сортировка:</label>
           <select class="sort__option-list" name="sort" id="sort">
@@ -221,7 +235,7 @@
             <li class="catalog__product-item product">
               <picture class="product__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-1@1x.png 1x, ./images/coffee-can-1@2x.png 2x" width="600" height="600">
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-1@1x.png 1x, ./images/coffee-can-1@2x.png 2x" width="476" height="476">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-1@1x.png 1x, ./images/coffee-can-1@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-1@1x.png" srcset="./images/coffee-can-1@2x.png 2x" alt="Изображение кофе">
               </picture>
               <div class="product__info">
@@ -236,7 +250,7 @@
             <li class="catalog__product-item product">
               <picture class="product__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-2@1x.png 1x, ./images/coffee-can-2@2x.png 2x" width="600" height="600">
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-2@1x.png 1x, ./images/coffee-can-2@2x.png 2x" width="476" height="476">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-2@1x.png 1x, ./images/coffee-can-2@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-2@1x.png" srcset="./images/coffee-can-2@2x.png 2x" alt="Изображение кофе">
               </picture>
               <div class="product__info">
@@ -251,7 +265,7 @@
             <li class="catalog__product-item product">
               <picture class="product__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-3@1x.png 1x, ./images/coffee-can-3@2x.png 2x" width="600" height="600">
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-3@1x.png 1x, ./images/coffee-can-3@2x.png 2x" width="476" height="476">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-3@1x.png 1x, ./images/coffee-can-3@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-3@1x.png" srcset="./images/coffee-can-3@2x.png 2x" alt="Изображение кофе">
               </picture>
               <div class="product__info">
@@ -266,7 +280,7 @@
             <li class="catalog__product-item product">
               <picture class="product__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-4@1x.png 1x, ./images/coffee-can-4@2x.png 2x" width="600" height="600">
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-4@1x.png 1x, ./images/coffee-can-4@2x.png 2x" width="476" height="476">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-4@1x.png 1x, ./images/coffee-can-4@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-4@1x.png" srcset="./images/coffee-can-4@2x.png 2x" alt="Изображение кофе">
               </picture>
               <div class="product__info">
@@ -281,7 +295,7 @@
             <li class="catalog__product-item product">
               <picture class="product__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-5@1x.png 1x, ./images/coffee-can-5@2x.png 2x" width="600" height="600">
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-5@1x.png 1x, ./images/coffee-can-5@2x.png 2x" width="476" height="476">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-5@1x.png 1x, ./images/coffee-can-5@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-5@1x.png" srcset="./images/coffee-can-5@2x.png 2x" alt="Изображение кофе">
               </picture>
               <div class="product__info">
@@ -296,7 +310,7 @@
             <li class="catalog__product-item product">
               <picture class="product__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-6@1x.png 1x, ./images/coffee-can-6@2x.png 2x" width="600" height="600">
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-6@1x.png 1x, ./images/coffee-can-6@2x.png 2x" width="476" height="476">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-6@1x.png 1x, ./images/coffee-can-6@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-6@1x.png" srcset="./images/coffee-can-6@2x.png 2x" alt="Изображение кофе">
               </picture>
               <div class="product__info">
@@ -340,7 +354,7 @@
       <h2 class="visually-hidden">Локализация</h2>
       <picture class="map__image">
         <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x" width="600" height="600">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x" width="476" height="476">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x" width="768" height="480">
         <img width="320" height="420" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" alt="Карта">
       </picture>
     </section>

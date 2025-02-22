@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
 }
 
 .pagination__link {
@@ -17,6 +21,19 @@
   justify-content: center;
   padding: 8px;
   border-radius: 4px;
+}
+
+
+.pagination__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.pagination__item:nth-last-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .pagination__link--active {
@@ -43,6 +60,15 @@
   color: $base-white;
 }
 
+.pagination__link--previous {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 24px;
+    background-color: $base-white;
+    padding: 8px 20px;
+  }
+}
+
 .pagination__link--previous::after {
   content: "";
   display: block;
@@ -51,6 +77,15 @@
   background-color: $base-primary;
   mask-image: url("../../icons/pagination-arrow.svg");
   mask-position: center;
+
+  @media (min-width: $tablet-width) {
+    content: "Назад";
+    text-align: center;
+    width: auto;
+    height: 24px;
+    mask-image: none;
+    background-color: $base-white;
+  }
 }
 
 .pagination__link--previous:active::after,
@@ -58,6 +93,15 @@
 .pagination__link--previous:focus::after,
 .pagination__link--previous:focus-visible::after {
   background-color: $base-white;
+}
+
+.pagination__link--next {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 24px;
+    background-color: $base-white;
+    padding: 8px 20px;
+  }
 }
 
 .pagination__link--next::after {
@@ -69,6 +113,16 @@
   mask-image: url("../../icons/pagination-arrow.svg");
   mask-position: center;
   transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    content: "Вперед";
+    text-align: center;
+    width: auto;
+    height: 24px;
+    mask-image: none;
+    background-color: $base-white;
+    transform: none;
+  }
 }
 
 .pagination__link--next:active::after,

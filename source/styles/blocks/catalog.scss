@@ -2,12 +2,20 @@
   background-color: $bg-lightest-grey;
   text-align: center;
   padding: 50px 0 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0 88px;
+  }
 }
 
 .catalog__container {
   padding: 0 20px;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+  }
 }
 
 .catalog__title {
@@ -25,15 +33,27 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+  }
 }
 
 .catalog__filters {
   text-align: left;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 40px;
-}
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    position: relative;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+  }
+}
 
 fieldset {
   display: flex;
@@ -41,6 +61,18 @@ fieldset {
   border: none;
   padding: 0;
   margin: 0 0 30px;
+}
+
+.catalog__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 20px;
+  }
 }
 
 .catalog__filters-submit {
@@ -56,6 +88,12 @@ fieldset {
   line-height: 24px;
   color: $base-white;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .catalog__filters-submit:hover,
@@ -84,6 +122,10 @@ fieldset {
   font-size: 16px;
   line-height: 24px;
   color: $base-primary;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+  }
 }
 
 .catalog__filters-reset:hover,
@@ -102,4 +144,17 @@ fieldset {
 
 .catalog__products-container {
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+}
+
+
+.catalog__products-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
