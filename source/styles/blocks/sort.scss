@@ -1,0 +1,50 @@
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 15px;
+}
+
+.sort__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.sort__option {
+  font-family: "Montserrat", sans-serif;
+  background-color: $bg-lightest-grey;
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.sort__option-list {
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: none;
+  padding: 4px 26px 4px 10px;
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  appearance: none;
+  background-image: url("../../icons/icon-sort-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 6px bottom 50%;
+  background-size: 10px 6px;
+}
+
+.sort__option-list:hover,
+.sort__option-list:focus,
+.sort__option-list:focus-visible {
+  background-color: $base-secondary;
+  outline-color: $base-secondary;
+}
+
+.sort__option-list:active {
+  background-image: url("../../icons/icon-sort-arrow2.svg");
+}

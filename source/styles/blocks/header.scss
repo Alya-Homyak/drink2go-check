@@ -3,12 +3,15 @@
   margin: 0;
   background-color: $base-white;
   color: $base-black;
+  position: relative;
 }
 
 .header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -22,14 +25,27 @@
 .header__profile::before {
   display: block;
   content: "";
-  background-image: url("../../icons/user-grey.svg");
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
+  background-color: $base-black;
+  mask-image: url("../../icons/user-grey.svg");
+  mask-position: center;
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
   width: 16px;
   height: 16px;
   padding: 22px;
   background-position: center;
 }
+
+.header__profile:active {
+  background-color: $base-secondary;
+}
+
+// .header__profile:hover::before,
+// .header__profile:focus::before,
+// .header__profile:active::before {
+//   background-image: url("../../icons/user-colored.svg");
+// }
+
 
 .header__basket::before {
   display: block;
@@ -43,10 +59,19 @@
   background-position: center;
 }
 
-.header__navigation::before {
+.header__basket:active {
+  background-color: $base-secondary;
+}
+
+// .header__basket:hover::before,
+// .header__basket:focus::before,
+// .header__basket:active::before {
+//   background-image: url("../../icons/union-colored.svg");
+// }
+
+.header__navigation-button::before {
   display: block;
   content: "";
-  background-image: url("../../icons/icon-burger.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
   width: 16px;
@@ -55,20 +80,14 @@
   background-position: center;
 }
 
-.header__nav-item {
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid $base-secondary;
+.open-navigation::before {
+  background-image: url("../../icons/icon-burger.svg");
 }
 
-.header__nav-item:last-child {
-  border-bottom: 1px solid $base-secondary;
+.close-navigation::before {
+  background-image: url("../../icons/icon-close.svg");
 }
 
-.header__nav-link {
-  text-transform: uppercase;
-  color: $base-black;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
+.header__navigation-button:active {
+  background-color: $base-secondary;
 }
