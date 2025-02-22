@@ -69,7 +69,7 @@
 //   background-image: url("../../icons/union-colored.svg");
 // }
 
-.header__navigation::before {
+.header__navigation-button::before {
   display: block;
   content: "";
   background-size: 16px 16px;
@@ -88,6 +88,6 @@
   background-image: url("../../icons/icon-close.svg");
 }
 
-.header__navigation:active {
+.header__navigation-button:active {
   background-color: $base-secondary;
 }
