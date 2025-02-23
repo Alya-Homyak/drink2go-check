@@ -20,7 +20,7 @@
           <img class="header__logo-picture" width="32" height="36" src="images/logo-icon.svg" alt="Логотип страницы">
         </picture>
       </a>
-
+      <!-- поправить селектор -->
       <nav class="header__nav-section  navigation">
         <ul class="navigation__list no-list">
           <li class="navigation__item current-page"><a class="navigation__link" href="#"><span>Главная</span></a></li>
@@ -45,7 +45,7 @@
       <h2 class="visually-hidden">Слайдер с продуктами</h2>
       <div class="hero__container">
         <ul class="hero__slides no-list">
-          <li class="hero__slide slide slide--flat-white">
+          <li class="hero__slide slide slide--flat-white slide--active">
             <div class="slide__container">
               <picture class="slide__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/flat_white_img@1x.png 1x, ./images/flat_white_img@2x.png 2x" width="600" height="600">
@@ -69,7 +69,7 @@
 
           </li>
 
-          <li class="hero__slide slide slide--lavender-latte visually-hidden">
+          <li class="hero__slide slide slide--lavender-latte">
             <div class="slide__container">
               <picture class="slide__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/lavender_img@1x.png 1x, ./images/lavender_img@2x.png 2x" width="600" height="600">
@@ -92,7 +92,7 @@
             </div>
           </li>
 
-          <li class="hero__slide slide slide--espresso visually-hidden">
+          <li class="hero__slide slide slide--espresso">
             <div class="slide__container">
               <picture class="slide__image">
                 <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/espresso_img@1x.png 1x, ./images/espresso_img@2x.png 2x" width="600" height="600">
@@ -115,10 +115,10 @@
             </div>
           </li>
         </ul>
-        <button class="hero__slider-button slider-button-prev" type="button">
+        <button class="hero__slider-button hero__slider-button--prev" type="button" disabled>
           <span class="visually-hidden">назад</span>
         </button>
-        <button class="hero__slider-button slider-button-next" type="button">
+        <button class="hero__slider-button hero__slider-button--next" type="button">
           <span class="visually-hidden">вперед</span>
         </button>
       </div>

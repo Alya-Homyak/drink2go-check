@@ -11,6 +11,53 @@
   text-align: center;
 }
 
+.hero__slider-button {
+  background-color: $base-primary;
+  border: none;
+  width: 20px;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  mask-image: url("../../icons/icon-slider-arrow.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+}
+
+.hero__slider-button--prev {
+  left: 0;
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    bottom: 188;
+  }
+}
+
+.hero__slider-button--prev:disabled {
+  @media (min-width: $tablet-width) {
+    background-color: $base-grey;
+  }
+}
+
+.hero__slider-button--next {
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    bottom: 188;
+  }
+}
+
+.hero__slider-button--next:disabled {
+  @media (min-width: $tablet-width) {
+    background-color: $base-grey;
+  }
+}
+
 
 .hero__slider-button:active::before {
   @media (min-width: $tablet-width) {

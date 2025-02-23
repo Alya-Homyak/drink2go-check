@@ -1,3 +1,12 @@
+
+.slide {
+  display: none;
+}
+
+.slide--active {
+  display: block;
+}
+
 .slide__container {
   width: 280px;
   margin: 0 auto;
@@ -144,39 +153,4 @@
 
 .slide--espresso::before {
   background-color: $bg-espresso;
-}
-
-.hero__slider-button {
-  background-color: transparent;
-  border: none;
-  width: 20px;
-  padding: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  background-image: url("../../icons/icon-slider-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-  }
-}
-
-.slider-button-prev {
-  left: 0;
-  transform: rotate(180deg);
-
-  @media (min-width: $tablet-width) {
-    bottom: 258;
-  }
-}
-
-.slider-button-next {
-  right: 0;
-
-  @media (min-width: $tablet-width) {
-    bottom: 258;
-  }
 }
