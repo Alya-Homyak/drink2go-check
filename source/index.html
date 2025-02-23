@@ -32,7 +32,7 @@
       <div class="header__icons">
         <a class="header__profile" href="#"><span class="visually-hidden">Войти</span></a>
         <a class="header__basket" href="#"><span class="visually-hidden">Корзина</span></a>
-        <a class="header__navigation-button open-navigation" href="#"><span class="visually-hidden">Навигация</span></a>
+        <a class="header__navigation-button open-navigation js-toggle-button" href="#"><span class="visually-hidden">Навигация</span></a>
       </div>
     </div>
   </header>
@@ -112,20 +112,20 @@
             </div>
           </li>
         </ul>
-        <button class="hero__slider-button hero__slider-button--prev" type="button" disabled>
+        <button class="hero__slider-button hero__slider-button--prev slider-button-prev" type="button" disabled>
           <span class="visually-hidden">назад</span>
         </button>
-        <button class="hero__slider-button hero__slider-button--next" type="button">
+        <button class="hero__slider-button hero__slider-button--next slider-button-next" type="button">
           <span class="visually-hidden">вперед</span>
         </button>
-        <div class="hero__pagination">
-          <button class="hero__pagination-button hero__pagination-button--active" type="button" data-number="1">
+        <div class="hero__pagination slider-pagination">
+          <button class="hero__pagination-button hero__pagination-button--active" type="button" data-slide-index="0">
             <span class="visually-hidden">1</span>
           </button>
-          <button class="hero__pagination-button" type="button" data-number="2">
+          <button class="hero__pagination-button" type="button" data-slide-index="1">
             <span class="visually-hidden">1</span>
           </button>
-          <button class="hero__pagination-button" type="button" data-number="3">
+          <button class="hero__pagination-button" type="button" data-slide-index="2">
             <span class="visually-hidden">1</span>
           </button>
         </div>
