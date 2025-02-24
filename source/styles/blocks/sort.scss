@@ -3,6 +3,18 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    padding: 0 4px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 122px;
+    right: 42px;
+  }
 }
 
 .sort__title {
@@ -10,6 +22,12 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+  padding-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+    padding-left: 0;
+  }
 }
 
 .sort__option {

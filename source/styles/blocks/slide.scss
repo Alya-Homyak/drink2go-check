@@ -1,12 +1,62 @@
+
+.slide {
+  display: none;
+}
+
+.slide--active {
+  display: block;
+}
+
 .slide__container {
   width: 280px;
   margin: 0 auto;
   padding: 20px 20px 60px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 608px;
+    margin: 0 auto;
+    padding: 60px 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 30px 60px 84px;
+    position: relative;
+  }
 }
 
 .slide__image {
   height: auto;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 45px;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
+
+.slide__information {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 150px;
+    padding-left: 30px;
+  }
 }
 
 .slide__new {
@@ -26,12 +76,27 @@
   font-weight: 700;
   margin: 0 auto 10px;
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    margin-bottom: 16px;
+  }
 }
 
 .slide__description {
   font-size: 14px;
   line-height: 20px;
   margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .slide__buy {
@@ -40,6 +105,11 @@
   align-items: center;
   margin: 0 auto;
   width: 230px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 .slide__price {
@@ -87,57 +157,36 @@
   background-color: $base-grey;
 }
 
-.slide--flat-white {
-  background-color: $bg-flat-white;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-bo;
-}
-
-.slide--lavender-latte {
-  background-color: $bg-lavender-latte;
-  display: flex;
-  flex-direction: column;
-}
-
-.slide--espresso {
-  background-color: $bg-espresso;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero__slider-button {
-  background-color: transparent;
-  border: none;
-  width: 20px;
-  padding: 0;
-}
-
-.slider-button-prev {
+.slide::before {
+  content: "";
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: block;
+  width: 100%;
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  background-image: url("../../icons/icon-slider-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: rotate(180deg);
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
 }
 
-// .slider-button-prev:active::before {
-//   background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-// }
-
-.slider-button-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background-image: url("../../icons/icon-slider-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.slide--flat-white::before {
+  background-color: $bg-flat-white;
 }
 
-// .slider-button-next:active {
-//   background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-// }
+.slide--lavender-latte::before {
+  background-color: $bg-lavender-latte;
+}
+
+.slide--espresso::before {
+  background-color: $bg-espresso;
+}

@@ -2,6 +2,7 @@
 @import "./common/variables.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
+@import "../vendor/nouislider/nouislider.css";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
@@ -16,3 +17,4 @@
 @import "./blocks/pagination.scss";
 @import "./blocks/map.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/no-ui.scss";

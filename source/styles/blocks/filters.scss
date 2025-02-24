@@ -7,7 +7,21 @@
 }
 
 .filter__price-slider {
-  height: 48px;
+  height: 4px;
+  margin-top: 9px;
+  margin-bottom: 34px;
+  padding-left: 12px;
+  padding-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+    padding-right: 0;
+  }
 }
 
 .filter__price-field {
@@ -15,6 +29,10 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 1px;
+  }
 }
 
 .filter__price-field::after {
@@ -39,6 +57,26 @@
   padding: 8px 10px;
   box-sizing: border-box;
   text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+    margin-right: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    width: 134px;
+  }
+}
+
+.filter__price-value:nth-last-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .filter__price-value:focus,
@@ -57,6 +95,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  color: $base-grey;
 }
 
 .filter__radio-container {

@@ -12,14 +12,103 @@
   justify-content: space-between;
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+    padding: 0 40px;
+    align-items: center;
+  }
 }
 
 .header__logo {
   margin: 12px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
 }
+
+.header__title {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 126px;
+    color: $base-black;
+    letter-spacing: 0.02px;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 40px 0 20px;
+  }
+}
+
 
 .header__icons {
   display: flex;
+}
+
+.header__profile {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    padding: 32px 20px;
+    margin-left: 24px;
+  }
+}
+
+.header__profile span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-transform: uppercase;
+    color: $base-black;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02;
+    margin: 0 0 0 8px;
+  }
+}
+
+.header__basket {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    padding: 32px 20px;
+    margin-left: 24px;
+  }
+}
+
+.header__basket span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-transform: uppercase;
+    color: $base-black;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    margin-left: 8px;
+    letter-spacing: 0.02;
+  }
+}
+
+.header__navigation-button span {
+  display: none;
 }
 
 .header__profile::before {
@@ -34,40 +123,72 @@
   height: 16px;
   padding: 22px;
   background-position: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.header__profile:hover::before,
+.header__profile:focus::before,
+.header__profile:focus-visible::before,
+.header__profile:active::before {
+  background-color: $base-primary;
+  outline-color: transparent;
+}
+
+.header__profile:hover,
+.header__profile:focus,
+.header__profile:focus-visible,
+.header__profile:active {
+  outline-color: transparent;
 }
 
 .header__profile:active {
   background-color: $base-secondary;
 }
 
-// .header__profile:hover::before,
-// .header__profile:focus::before,
-// .header__profile:active::before {
-//   background-image: url("../../icons/user-colored.svg");
-// }
-
-
 .header__basket::before {
   display: block;
   content: "";
-  background-image: url("../../icons/union-grey.svg");
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
+  background-color: $base-black;
+  mask-image: url("../../icons/union-grey.svg");
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
   width: 16px;
   height: 16px;
   padding: 22px;
-  background-position: center;
+  mask-position: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.header__basket:hover::before,
+.header__basket:focus::before,
+.header__basket:focus-visible::before,
+.header__basket:active::before {
+  background-color: $base-primary;
+  outline-color: transparent;
+}
+
+.header__basket:hover,
+.header__basket:focus,
+.header__basket:focus-visible,
+.header__basket:active {
+  outline-color: transparent;
 }
 
 .header__basket:active {
   background-color: $base-secondary;
 }
 
-// .header__basket:hover::before,
-// .header__basket:focus::before,
-// .header__basket:active::before {
-//   background-image: url("../../icons/union-colored.svg");
-// }
+.header__navigation-button {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 .header__navigation-button::before {
   display: block;

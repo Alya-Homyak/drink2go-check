@@ -1,5 +1,9 @@
 .hero__container {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__slides {
@@ -9,4 +13,104 @@
 
 .hero__slide {
   text-align: center;
+}
+
+.hero__slider-button {
+  background-color: $base-primary;
+  border: none;
+  width: 20px;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  mask-image: url("../../icons/icon-slider-arrow.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+}
+
+.hero__slider-button--prev {
+  left: 0;
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    bottom: 188;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 0;
+  }
+}
+
+.hero__slider-button--prev:disabled {
+  @media (min-width: $tablet-width) {
+    background-color: $base-grey;
+  }
+}
+
+.hero__slider-button--next {
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    bottom: 188;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 0;
+  }
+}
+
+.hero__slider-button--next:disabled {
+  @media (min-width: $tablet-width) {
+    background-color: $base-grey;
+  }
+}
+
+
+.hero__slider-button:active::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    height: 100%;
+    display: block;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.hero__pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 66px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.hero__pagination-button {
+  width: 62px;
+  height: 4px;
+  background-color: $base-white;
+  border: none;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.hero__pagination-button:nth-last-child(1) {
+  margin: 0;
+}
+
+.hero__pagination-button--active {
+  width: 62px;
+  height: 4px;
+  background-color: $base-primary;
+  border: none;
 }
