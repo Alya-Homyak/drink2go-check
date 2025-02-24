@@ -6,6 +6,9 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./favicons/favicon-16x16.png" type="image/png">
+  <link rel="manifest" href="./favicons/site.webmanifest">
   <link rel="stylesheet" href="./styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -167,7 +170,7 @@
         <form class="catalog__filters" action=" https://echo.htmlacademy.ru" method="post">
           <fieldset class="catalog__fieldset">
             <legend class="catalog__filter filter filter--title">Цена</legend>
-            <div class="filter__price-slider"></div>
+            <div class="filter__price-slider" id="range"></div>
             <div class="filter__price-field">
               <label class="visually-hidden" for="min-price">Цена</label>
               <input class="filter__price-value" type="number" name="min-price" id="min-price" placeholder="0">

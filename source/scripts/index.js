@@ -1,6 +1,7 @@
 /* в этот файл добавляет скрипты*/
 
 import "./slider";
+import "./range";
 
 const navButton = document.querySelector('.header__navigation-button');
 const navSection = document.querySelector('.navigation');
