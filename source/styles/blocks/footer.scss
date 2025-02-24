@@ -1,3 +1,9 @@
+.footer {
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
+
 .footer__container {
   width: 320px;
   margin: 0 auto;
