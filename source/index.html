@@ -19,6 +19,7 @@
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-short.svg" width="82" height="36">
           <img class="header__logo-picture" width="32" height="36" src="images/logo-icon.svg" alt="Логотип страницы">
         </picture>
+        <p class="header__title">Интернет-магазин кофейных напитков</p>
       </a>
       <nav class="header__nav-section  navigation">
         <ul class="navigation__list no-list">
@@ -30,9 +31,9 @@
       </nav>
 
       <div class="header__icons">
-        <a class="header__profile" href="#"><span class="visually-hidden">Войти</span></a>
-        <a class="header__basket" href="#"><span class="visually-hidden">Корзина</span></a>
-        <a class="header__navigation-button open-navigation js-toggle-button" href="#"><span class="visually-hidden">Навигация</span></a>
+        <a class="header__profile" href="#"><span>Войти</span></a>
+        <a class="header__basket" href="#"><span>Корзина</span></a>
+        <a class="header__navigation-button open-navigation js-toggle-button" href="#"><span>Навигация</span></a>
       </div>
     </div>
   </header>
@@ -164,7 +165,7 @@
         <p class="catalog__title">Каталог</p>
         <h2 class="catalog__second-title">Каталог кофейных напитков</h2>
         <form class="catalog__filters" action=" https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+          <fieldset class="catalog__fieldset">
             <legend class="catalog__filter filter filter--title">Цена</legend>
             <div class="filter__price-slider"></div>
             <div class="filter__price-field">
@@ -174,7 +175,7 @@
               <input class="filter__price-value" type="number" name="max-price" id="max-price" placeholder="900">
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="catalog__fieldset">
             <legend class="catalog__filter filter filter--title">Наличие молока</legend>
             <div class="filter__radio-container">
               <input class="filter__radio-value" type="radio" name="milk" id="no-matter" value="no-matter" checked>
@@ -197,7 +198,7 @@
               <label for="no-milk">Без молока</label>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="catalog__fieldset">
             <legend class="catalog__filter filter filter--title">Страна произрастания</legend>
             <div class="filter__checkbox-container">
               <input class="filter__checkbox-value" type="checkbox" name="country" id="brazil" value="brazil" checked>
@@ -242,7 +243,6 @@
           <ul class="catalog__products-list no-list">
             <li class="catalog__product-item product">
               <picture class="product__image">
-                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-1@1x.png 1x, ./images/coffee-can-1@2x.png 2x" width="600" height="600">
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-1@1x.png 1x, ./images/coffee-can-1@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-1@1x.png" srcset="./images/coffee-can-1@2x.png 2x" alt="Изображение кофе">
               </picture>
@@ -257,7 +257,6 @@
             </li>
             <li class="catalog__product-item product">
               <picture class="product__image">
-                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-2@1x.png 1x, ./images/coffee-can-2@2x.png 2x" width="600" height="600">
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-2@1x.png 1x, ./images/coffee-can-2@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-2@1x.png" srcset="./images/coffee-can-2@2x.png 2x" alt="Изображение кофе">
               </picture>
@@ -272,7 +271,6 @@
             </li>
             <li class="catalog__product-item product">
               <picture class="product__image">
-                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-3@1x.png 1x, ./images/coffee-can-3@2x.png 2x" width="600" height="600">
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-3@1x.png 1x, ./images/coffee-can-3@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-3@1x.png" srcset="./images/coffee-can-3@2x.png 2x" alt="Изображение кофе">
               </picture>
@@ -287,7 +285,6 @@
             </li>
             <li class="catalog__product-item product">
               <picture class="product__image">
-                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-4@1x.png 1x, ./images/coffee-can-4@2x.png 2x" width="600" height="600">
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-4@1x.png 1x, ./images/coffee-can-4@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-4@1x.png" srcset="./images/coffee-can-4@2x.png 2x" alt="Изображение кофе">
               </picture>
@@ -302,7 +299,6 @@
             </li>
             <li class="catalog__product-item product">
               <picture class="product__image">
-                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-5@1x.png 1x, ./images/coffee-can-5@2x.png 2x" width="600" height="600">
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-5@1x.png 1x, ./images/coffee-can-5@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-5@1x.png" srcset="./images/coffee-can-5@2x.png 2x" alt="Изображение кофе">
               </picture>
@@ -317,7 +313,6 @@
             </li>
             <li class="catalog__product-item product">
               <picture class="product__image">
-                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/coffee-can-6@1x.png 1x, ./images/coffee-can-6@2x.png 2x" width="600" height="600">
                 <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/coffee-can-6@1x.png 1x, ./images/coffee-can-6@2x.png 2x" width="130" height="188">
                 <img width="130" height="180" src="./images/coffee-can-6@1x.png" srcset="./images/coffee-can-6@2x.png 2x" alt="Изображение кофе">
               </picture>
@@ -373,8 +368,9 @@
           <a class="footer__logo" href="#">
             <picture>
               <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-long.svg" width="170" height="36">
-              <img class="header__logo-picture" width="82" height="36" src="images/logo-short.svg" alt="Логотип страницы">
+              <img class="footer__logo-picture" width="82" height="36" src="images/logo-short.svg" alt="Логотип страницы">
             </picture>
+            <p class="footer__section-title">Интернет-магазин кофейных напитков</p>
           </a>
           <div class="footer__social social">
             <ul class="social__list no-list">

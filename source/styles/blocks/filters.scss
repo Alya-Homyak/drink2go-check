@@ -12,6 +12,10 @@
   @media (min-width: $tablet-width) {
     height: 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 46px;
+  }
 }
 
 .filter__price-field {

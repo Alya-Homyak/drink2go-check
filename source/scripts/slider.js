@@ -58,7 +58,6 @@ function changePaginationState() {
   paginationButtons[current].classList.add('hero__pagination-button--active');
 }
 
-//-------------------------
 const prevButton = document.querySelector('.hero__slider-button--prev');
 prevButton.addEventListener('click', prevSlide);
 

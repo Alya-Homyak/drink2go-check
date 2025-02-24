@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 80px 0 88px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 98px 0 120px;
+  }
 }
 
 .catalog__container {
@@ -15,6 +19,15 @@
 
   @media (min-width: $tablet-width) {
     width: 728px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    grid-template-rows: auto;
+    position: relative;
   }
 }
 
@@ -26,6 +39,10 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+  }
 }
 
 .catalog__second-title {
@@ -38,6 +55,11 @@
     font-size: 42px;
     font-weight: 700;
     line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+    margin-bottom: 40px;
   }
 }
 
@@ -53,9 +75,22 @@
     padding-bottom: 70px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    grid-column: 1 / 2;
+  }
 }
 
-fieldset {
+.catalog__fieldset:nth-last-of-type(-1) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__fieldset {
   display: flex;
   flex-direction: column;
   border: none;
@@ -70,6 +105,13 @@ fieldset {
     left: 0;
     right: 0;
     justify-content: center;
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    inset: 674px 0 auto;
+    justify-content: space-between;
     display: flex;
     padding-bottom: 20px;
   }
@@ -93,6 +135,11 @@ fieldset {
     width: 137px;
     margin-right: 20px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    margin-right: 0;
   }
 }
 
@@ -126,6 +173,10 @@ fieldset {
   @media (min-width: $tablet-width) {
     width: 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+  }
 }
 
 .catalog__filters-reset:hover,
@@ -148,6 +199,15 @@ fieldset {
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding-top: 54px;
+    padding-left: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 
@@ -155,6 +215,11 @@ fieldset {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
 }

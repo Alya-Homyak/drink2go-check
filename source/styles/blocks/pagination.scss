@@ -1,3 +1,9 @@
+.pagination {
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
+}
+
 .pagination__list {
   display: flex;
   justify-content: space-between;

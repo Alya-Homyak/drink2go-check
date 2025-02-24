@@ -1,5 +1,9 @@
 .hero__container {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__slides {
