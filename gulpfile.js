@@ -15,6 +15,7 @@ import svgo from 'gulp-svgmin';
 import { stacksvg } from 'gulp-stacksvg';
 import server from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
+import ghPages from 'gulp-gh-pages';
 
 const { src, dest, watch, series, parallel } = gulp;
 const sass = gulpSass(dartSass);
@@ -207,10 +208,7 @@ export function runDev (done) {
   )(done);
 }
 
-var gulp        = require('gulp');
-var deploy      = require('gulp-gh-pages');
-
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
+export function deployToGhPages() {
+  return src("./build/**/*")
+    .pipe(ghPages());
+}
