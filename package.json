@@ -20,7 +20,7 @@
     "start": "gulp runDev",
     "preview": "npm run build && browser-sync start -s build/ --cors --no-notify --no-ui",
     "lint": "npm-run-all -pc lint:**",
-    "lint:spaces": "ec --exclude vendor/*",
+    "lint:spaces": "ec --exclude vendor/* --exclude test-config/ --exclude backstop_data/",
     "lint:markup": "cd source && html-validator --quiet",
     "lint:html": "linthtml source/**/*.html --config .linthtmlrc",
     "lint:bem": "gulp lintBem --silent",
